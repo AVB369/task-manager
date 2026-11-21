@@ -1,15 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task Manager</h1>
+    </header>
 
-  <h1>Task Manager</h1>
+    <main>
+      <section id="dashboard">
+        <div class="stat">
+          <span class="stat-label">Total</span>
+          <span class="stat-number" id="total-count">0</span>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="stat">
+          <span class="stat-label">Pending</span>
+          <span class="stat-number" id="pending-count">0</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-label">Completed</span>
+          <span class="stat-number" id="completed-count">0</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
